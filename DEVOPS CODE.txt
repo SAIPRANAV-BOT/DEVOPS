@@ -1,0 +1,38 @@
+# 1️⃣ Go to your project folder
+cd path/to/your/project
+
+# 2️⃣ Initialize Git in this folder
+git init
+
+# 3️⃣ Check current status
+git status
+
+# 4️⃣ Stage files you want to commit
+git add filename                # For a single file
+# OR
+git add .                       # Stage all files in the folder
+
+# 5️⃣ Commit staged files with a message
+git commit -m "Your commit message here"
+
+# 6️⃣ Link your local repo to GitHub
+git remote add origin https://github.com/YourUsername/YourRepo.git
+
+# 7️⃣ Push your commits to GitHub (first time)
+git push -u origin main
+
+# 8️⃣ Make more changes locally
+# Edit or create new files
+
+# 9️⃣ Stage and commit changes again
+git add .
+git commit -m "Describe what you changed"
+
+# 🔟 Push changes to GitHub
+git push origin main
+
+# Optional: Pull updates from GitHub (if other collaborators pushed changes)
+git pull origin main
+
+# Check status anytime
+git status

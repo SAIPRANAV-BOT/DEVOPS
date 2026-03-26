@@ -1,4 +1,4 @@
-name: Simple CI pipeline
+name: Simple CI Pipeline
 
 on:
   push:
@@ -12,5 +12,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Run a simple command
-        run: echo "This is changed data"
+      - name: run a simple command
+        run: echo "Hallaleuh"
