@@ -1,8 +1,13 @@
-name: First CI Pipeline
+name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - main-branch
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -10,10 +15,18 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Show files in repo
-        run: ls -la
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-      - name: Print success message
-        run: echo"CI piine is working"
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Lint code
+        run: npm run lint
