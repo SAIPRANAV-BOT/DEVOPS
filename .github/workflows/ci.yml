@@ -16,4 +16,4 @@ jobs:
         run: ls -la
 
       - name: Print success message
-        run: echo "CI pipeline is working 🚀"
+        run: e"CI piine is working 🚀"
