@@ -16,4 +16,4 @@ jobs:
         run: ls -la
 
       - name: Print success message
-        run: e"CI piine is working 🚀"
+        run: echo"CI piine is working 🚀"
