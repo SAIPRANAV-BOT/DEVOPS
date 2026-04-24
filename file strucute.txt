@@ -1,0 +1,30 @@
+project-root/
+│
+├── frontend/
+│   ├── index.html / React app
+│   ├── src/
+│   ├── package.json
+│   └── Dockerfile
+│
+├── backend/
+│   ├── app.py / server.js
+│   ├── routes/
+│   ├── models/
+│   ├── requirements.txt / package.json
+│   └── Dockerfile
+│
+├── docker/
+│   ├── docker-compose.yml
+│   └── nginx.conf (optional)
+│
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── deploy.yml
+│
+├── database/
+│   ├── init.sql (optional)
+│
+├── .env
+├── README.md
+└── docker-compose.yml
